@@ -6,19 +6,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SalesActivity"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorSecondary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MabaStock"
+            android:textSize="25sp"
+            android:fontFamily="@font/cocogoose_light"
+            android:textColor="#FFFFFF"
+            android:layout_toLeftOf="@id/B"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/B"/>
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Pilih Layanan"
+        android:textColor="#FFFFFF"
         android:textSize="@string/title"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
         />
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
-
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/strip"
+        android:background="@color/colorSecondary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/round_rect_shape"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="75dp">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginHorizontal="10dp"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginHorizontal="10dp"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
