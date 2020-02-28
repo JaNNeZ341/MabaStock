@@ -17,7 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="sidev.techdev.mabastock.MainActivity" >
+        <activity android:name="sidev.techdev.mabastock.StockActivity" >
+        </activity>
+        <activity android:name="sidev.techdev.mabastock.SalesActivity" />
+        <activity android:name="sidev.techdev.mabastock.HomeActivity" />
+        <activity android:name="sidev.techdev.mabastock.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
